@@ -46,7 +46,7 @@ const badges = groups.map(group => {
   });
 
   let badge = '';
-  for (let [key, values] of itemMap) {
+  for (const [key, values] of itemMap) {
     const filteredValues = values.filter(value => value === true);
     if (filteredValues.length === 3) {
       badge = key;

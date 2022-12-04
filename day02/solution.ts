@@ -3,20 +3,18 @@ import { posix } from "https://deno.land/std@0.65.0/path/mod.ts";
 const fileName = posix.join(new URL('.', import.meta.url).pathname, 'input_b');
 const file = await Deno.readTextFile(fileName);
 
-const rock = {
-  letters: ['A', 'X'],
-  value: 1
-};
-const paper = {
-  letters: ['B', 'Y'],
-  value: 2
-};
-const scissors = {
-  letters: ['C', 'Z'],
-  value: 3
-};
-
-
+// const rock = {
+//   letters: ['A', 'X'],
+//   value: 1
+// };
+// const paper = {
+//   letters: ['B', 'Y'],
+//   value: 2
+// };
+// const scissors = {
+//   letters: ['C', 'Z'],
+//   value: 3
+// };
 
 const games = file
   .split('\n')
